@@ -1,0 +1,67 @@
+{
+  "exp1_ce_normal": {
+    "folds": 5,
+    "required_fields": [
+      "macro_f1",
+      "weighted_f1",
+      "accuracy",
+      "per_class",
+      "binary",
+      "confusion_matrix",
+      "normalized_confusion_matrix"
+    ],
+    "valid": true
+  },
+  "exp2_ce_patient_balanced": {
+    "folds": 5,
+    "required_fields": [
+      "macro_f1",
+      "weighted_f1",
+      "accuracy",
+      "per_class",
+      "binary",
+      "confusion_matrix",
+      "normalized_confusion_matrix"
+    ],
+    "valid": true
+  },
+  "exp3_weighted_ce_patient_balanced": {
+    "folds": 5,
+    "required_fields": [
+      "macro_f1",
+      "weighted_f1",
+      "accuracy",
+      "per_class",
+      "binary",
+      "confusion_matrix",
+      "normalized_confusion_matrix"
+    ],
+    "valid": true
+  },
+  "exp4_focal_patient_balanced": {
+    "folds": 5,
+    "required_fields": [
+      "macro_f1",
+      "weighted_f1",
+      "accuracy",
+      "per_class",
+      "binary",
+      "confusion_matrix",
+      "normalized_confusion_matrix"
+    ],
+    "valid": true
+  },
+  "exp5_best_plus_spectral_aug": {
+    "folds": 5,
+    "required_fields": [
+      "macro_f1",
+      "weighted_f1",
+      "accuracy",
+      "per_class",
+      "binary",
+      "confusion_matrix",
+      "normalized_confusion_matrix"
+    ],
+    "valid": true
+  }
+}

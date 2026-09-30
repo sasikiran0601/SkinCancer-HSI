@@ -1,0 +1,813 @@
+<USER_REQUEST>
+You are working on my hyperspectral skin-cancer classification project.
+
+I want you to implement the next controlled experimentation stage based on the existing codebase and the current 5-fold patient-level CV results.
+
+IMPORTANT:
+- Do NOT implement hierarchical classification yet.
+- Do NOT change the model architecture unless explicitly required below.
+- Do NOT change the patient-level folds.
+- Do NOT touch the final untouched test set.
+- Do NOT perform threshold tuning yet.
+- Do NOT optimize only for overall Macro F1.
+- The purpose of this stage is to determine whether Focal Loss and sampling actually improve the weak BE class.
+- All experiments must be reproducible and comparable.
+
+============================================================
+CURRENT RESULTS
+============================================================
+
+Original static validation:
+Macro F1 = 0.6287
+Accuracy = 73.1%
+
+Original static test:
+Macro F1 = 0.3907
+Accuracy = 60.6%
+
+Current 5-fold patient-level CV:
+Macro F1 = 0.4732 ± 0.0908
+Weighted F1 = 0.5846 ± 0.0909
+Accuracy = 0.5687 ± 0.0971
+Binary Accuracy = 0.7305 ± 0.0510
+Binary Macro F1 = 0.7286 ± 0.0518
+
+Per-class F1:
+BE = 0.1578 ± 0.1808
+BM = 0.6736 ± 0.1847
+ME = 0.6264 ± 0.0132
+MM = 0.4351 ± 0.0657
+
+Per-class recall:
+BE = 0.1392 ± 0.1564
+BM = 0.6008 ± 0.2223
+ME = 0.6048 ± 0.0751
+MM = 0.6122 ± 0.1281
+
+The current Stage 3 CV is already using:
+
+    FocalLoss(gamma=1.5, weight=None, label_smoothing=0.0)
+
+and:
+
+    use_sampler=True
+
+Therefore Stage 3 is NOT a clean baseline.
+
+The current CV summary is saved at:
+
+    scratch/kfold_cv_summary.json
+
+The existing patient-level folds must be reused exactly.
+
+============================================================
+MAIN OBJECTIVE
+============================================================
+
+Determine which training configuration actually improves:
+
+1. BE F1 — highest-priority class-specific metric
+2. BE Recall
+3. Macro F1
+4. MM F1
+5. Binary Macro F1
+
+Also monitor:
+
+6. BM F1
+7. ME F1
+8. Accuracy
+9. Weighted F1
+
+Do NOT declare an experiment successful merely because overall Macro F1 increases.
+
+For example:
+
+Macro F1:
+0.473 → 0.520
+
+is NOT automatically considered a meaningful improvement if:
+
+BE F1:
+0.158 → 0.150
+
+Instead, pay particular attention to whether BE improves without catastrophic degradation of the other classes.
+
+============================================================
+STEP 1 — INSPECT EXISTING DATA LOADER / SAMPLER
+============================================================
+
+Before implementing experiments, inspect the actual implementation of:
+
+    make_dataloader(...)
+
+and determine exactly what:
+
+    use_sampler=True
+
+does.
+
+Do NOT assume it is patient-balanced.
+
+Determine:
+
+- whether it uses class-balanced sampling
+- whether it uses patient-balanced sampling
+- whether it uses WeightedRandomSampler
+- how sample weights are calculated
+- whether multiple captures from the same patient receive independent weights
+- whether balancing is done at pixel/sample level or patient level
+- whether validation/test loaders are unaffected
+- whether there is any possibility of patient leakage
+
+Print/document the findings.
+
+If use_sampler=True is NOT patient-balanced, do not silently redefine it.
+
+Create a clearly named new sampling mode for patient-balanced sampling instead.
+
+For example, if appropriate to the existing architecture:
+
+    sampling_mode="normal"
+    sampling_mode="class_balanced"
+    sampling_mode="patient_balanced"
+
+Use naming consistent with the existing codebase if a different convention already exists.
+
+============================================================
+STEP 2 — CREATE A TRUE CROSS-ENTROPY BASELINE
+============================================================
+
+Modify the CV experiment code so that the loss function can be selected through configuration.
+
+Support at least:
+
+    loss_name="ce"
+    loss_name="weighted_ce"
+    loss_name="focal"
+
+For the TRUE baseline use:
+
+    torch.nn.CrossEntropyLoss()
+
+with:
+
+    no class weights
+    no label smoothing
+
+Equivalent to:
+
+    criterion = torch.nn.CrossEntropyLoss()
+
+Do NOT use Focal Loss in the baseline.
+
+============================================================
+STEP 3 — KEEP EVERYTHING ELSE IDENTICAL
+============================================================
+
+For the clean CE baseline, preserve exactly:
+
+- same 5 patient-level folds
+- same train/validation split files
+- same model architecture
+- same pretrained encoder
+- same dropout
+- same attention dimension
+- same phase 1 training
+- same phase 2 training
+- same learning rates
+- same optimizer
+- same weight decay
+- same scheduler
+- same early stopping
+- same number of epochs
+- same batch size
+- same normalization
+- same random seed strategy
+- same evaluation procedure
+
+The ONLY intended changes between controlled experiments should be:
+
+1. loss function
+2. sampling strategy
+3. class weighting
+4. augmentation
+
+Do not introduce unrelated architectural or optimization changes.
+
+============================================================
+STEP 4 — IMPLEMENT EXPERIMENT CONFIGURATION
+============================================================
+
+Refactor the CV runner so experiments can be selected from a configuration.
+
+For example:
+
+    ExperimentConfig(
+        name="exp1_ce_normal",
+        loss="ce",
+        sampling="normal",
+        augmentation=False
+    )
+
+The exact implementation is up to you, but it must make the experiments explicit and reproducible.
+
+============================================================
+STEP 5 — EXPERIMENT 1
+============================================================
+
+Run:
+
+    EXPERIMENT 1 — CE + NORMAL SAMPLING
+
+Configuration:
+
+    Loss:
+        CrossEntropyLoss()
+
+    Sampling:
+        normal/default sampling
+
+    Augmentation:
+        OFF
+
+    Patient folds:
+        existing 5-fold patient-level CV
+
+    Architecture:
+        unchanged
+
+    Training:
+        unchanged
+
+Save the results separately.
+
+Suggested output:
+
+    scratch/experiments/exp1_ce_normal/
+
+Include:
+
+    metrics.json
+    per_fold_metrics.json
+    confusion_matrices.json
+    predictions if the existing code supports them
+    experiment_config.json
+
+============================================================
+STEP 6 — EXPERIMENT 2
+============================================================
+
+Run:
+
+    EXPERIMENT 2 — CE + PATIENT-BALANCED SAMPLING
+
+Configuration:
+
+    Loss:
+        CrossEntropyLoss()
+
+    Sampling:
+        patient-balanced
+
+    Augmentation:
+        OFF
+
+Everything else identical to Experiment 1.
+
+Patient-balanced sampling must balance patients rather than merely balancing individual pixels.
+
+Important:
+
+If one patient has many more pixels/captures than another, do not let that patient dominate training simply because it contributes more samples.
+
+Document exactly how patient weights are calculated.
+
+Save separately:
+
+    scratch/experiments/exp2_ce_patient_balanced/
+
+============================================================
+STEP 7 — EXPERIMENT 3
+============================================================
+
+Run:
+
+    EXPERIMENT 3 — WEIGHTED CE + PATIENT-BALANCED SAMPLING
+
+Configuration:
+
+    Loss:
+        CrossEntropyLoss(weight=class_weights)
+
+    Sampling:
+        patient-balanced
+
+    Augmentation:
+        OFF
+
+Calculate class weights from the TRAINING portion of each fold only.
+
+IMPORTANT:
+Never calculate class weights using validation data.
+
+Never calculate class weights using the test set.
+
+Document the class weights used for every fold.
+
+Save:
+
+    scratch/experiments/exp3_weighted_ce_patient_balanced/
+
+============================================================
+STEP 8 — EXPERIMENT 4
+============================================================
+
+Run:
+
+    EXPERIMENT 4 — FOCAL LOSS + PATIENT-BALANCED SAMPLING
+
+Configuration:
+
+    Loss:
+        FocalLoss(gamma=1.5)
+
+    Sampling:
+        patient-balanced
+
+    Augmentation:
+        OFF
+
+Keep gamma=1.5 initially.
+
+Do NOT simultaneously tune gamma.
+
+The goal is to compare the effect of the loss/sampling strategy rather than perform hyperparameter optimization.
+
+Save:
+
+    scratch/experiments/exp4_focal_patient_balanced/
+
+Also compare this against the CURRENT Stage 3 configuration:
+
+    Focal Loss gamma=1.5
+    + existing use_sampler=True
+
+so we can determine whether the improvement comes from Focal Loss or from the new patient-balanced sampler.
+
+============================================================
+STEP 9 — EXPERIMENT 5
+============================================================
+
+ONLY after Experiments 1–4 have completed, identify the best loss + sampling configuration based on the predefined evaluation criteria.
+
+Then run:
+
+    EXPERIMENT 5 — BEST CONFIGURATION + SPECTRAL AUGMENTATION
+
+Enable spectral augmentation only.
+
+Do NOT change:
+
+- architecture
+- learning rates
+- number of epochs
+- optimizer
+- scheduler
+- folds
+
+The augmentation should be appropriate for hyperspectral data and must preserve the biological class label.
+
+Do NOT invent aggressive augmentation.
+
+If the codebase already contains spectral augmentation utilities, reuse them.
+
+If no augmentation exists, implement a conservative spectral augmentation module with clearly configurable parameters.
+
+Document exactly what augmentation is being applied.
+
+Save:
+
+    scratch/experiments/exp5_best_plus_spectral_aug/
+
+============================================================
+STEP 10 — REQUIRED METRICS FOR EVERY EXPERIMENT
+============================================================
+
+For EVERY fold report:
+
+Overall:
+
+    Macro F1
+    Weighted F1
+    Accuracy
+
+Per class:
+
+    BE precision
+    BE recall
+    BE F1
+
+    BM precision
+    BM recall
+    BM F1
+
+    ME precision
+    ME recall
+    ME F1
+
+    MM precision
+    MM recall
+    MM F1
+
+Binary grouping:
+
+    BE + BM = benign
+    ME + MM = malignant
+
+Report:
+
+    Binary Accuracy
+    Binary Macro F1
+    Binary Sensitivity/Recall
+    Binary Specificity
+    Binary Precision
+
+Also save:
+
+    4x4 confusion matrix
+    normalized confusion matrix if existing evaluation supports it
+
+============================================================
+STEP 11 — AGGREGATE ACROSS 5 FOLDS
+============================================================
+
+For every experiment calculate:
+
+    mean
+    standard deviation
+    minimum
+    maximum
+
+for:
+
+    Macro F1
+    Weighted F1
+    Accuracy
+    Binary Accuracy
+    Binary Macro F1
+
+and for every class:
+
+    precision
+    recall
+    F1
+
+This is important because BE has very high fold-to-fold variability.
+
+Do not report only the mean.
+
+============================================================
+STEP 12 — COMPARE ALL EXPERIMENTS
+============================================================
+
+Create a final comparison file such as:
+
+    scratch/experiments/experiment_comparison.json
+
+and preferably:
+
+    scratch/experiments/experiment_comparison.csv
+
+Create a readable summary table like:
+
+    Experiment
+    Loss
+    Sampling
+    Augmentation
+    Macro F1
+    BE F1
+    BE Recall
+    BM F1
+    ME F1
+    MM F1
+    Binary Macro F1
+    Accuracy
+
+Include mean ± std.
+
+Example format:
+
+    EXP1 CE + Normal
+    Macro F1: 0.xxx ± 0.xxx
+    BE F1:    0.xxx ± 0.xxx
+    ...
+
+Do not rank experiments with arbitrary scores.
+
+Instead, report the actual metric changes relative to the clean CE baseline.
+
+For example:
+
+    BE F1 change:
+    +0.xxx
+
+    Macro F1 change:
+    +0.xxx
+
+    MM F1 change:
+    -0.xxx
+
+This lets us make the next decision from evidence.
+
+============================================================
+STEP 13 — CREATE A METRIC DELTA REPORT
+============================================================
+
+For each experiment after Experiment 1, calculate:
+
+    Δ Macro F1
+    Δ BE F1
+    Δ BE Recall
+    Δ MM F1
+    Δ Binary Macro F1
+    Δ BM F1
+    Δ ME F1
+    Δ Accuracy
+
+relative to:
+
+    Experiment 1 — CE + Normal Sampling
+
+Save:
+
+    scratch/experiments/metric_deltas.json
+
+Also create a human-readable:
+
+    scratch/experiments/experiment_report.txt
+
+============================================================
+STEP 14 — SAVE BEST FOLD CHECKPOINTS
+============================================================
+
+For every experiment and every fold:
+
+- save the best validation checkpoint
+- save the epoch of the best checkpoint
+- save the best validation Macro F1
+- save BE F1 at the best checkpoint
+- save all other required metrics
+
+Use a clear directory structure, for example:
+
+    scratch/experiments/
+        exp1_ce_normal/
+            fold_0/
+            fold_1/
+            fold_2/
+            fold_3/
+            fold_4/
+
+        exp2_ce_patient_balanced/
+            fold_0/
+            ...
+        
+        exp3_weighted_ce_patient_balanced/
+            ...
+
+        exp4_focal_patient_balanced/
+            ...
+
+        exp5_best_plus_spectral_aug/
+            ...
+
+Do not overwrite checkpoints from previous experiments.
+
+============================================================
+STEP 15 — SAVE PREDICTIONS FOR PROBABILITY ANALYSIS
+============================================================
+
+For validation samples only, save:
+
+    patient_id
+    capture_id
+    true_label
+    predicted_label
+    P(BE)
+    P(BM)
+    P(ME)
+    P(MM)
+
+Preferably also save:
+
+    fold
+
+Do NOT perform threshold tuning.
+
+The purpose is to inspect the probability distribution later.
+
+Save something like:
+
+    validation_predictions.csv
+
+for each experiment/fold.
+
+============================================================
+STEP 16 — PROBABILITY ANALYSIS
+============================================================
+
+After Experiments 1–4, create a basic probability analysis for BE.
+
+Do NOT modify predictions using thresholds.
+
+Analyze:
+
+- average P(BE) for true BE samples
+- average P(BE) for non-BE samples
+- median P(BE)
+- percentile distribution
+- maximum P(BE)
+- probability of true BE samples being assigned to BM
+- probability of true BE samples being assigned to ME
+- probability of true BE samples being assigned to MM
+
+Also save a CSV containing true BE validation samples and their four class probabilities.
+
+The purpose is to determine whether BE failures are:
+
+A) cases where BE receives almost no probability
+
+or
+
+B) cases where BE is competitive with another class but loses argmax.
+
+Do NOT tune thresholds yet.
+
+============================================================
+STEP 17 — FIX BE PATIENT REPORTING
+============================================================
+
+The current code has:
+
+    be_val_pts = [
+        get_pid(s)
+        for s, c in val_labels_dict.items()
+        if c == "BE"
+    ]
+
+This can print the same patient ID multiple times when that patient has multiple captures.
+
+Change it to unique patient IDs:
+
+    be_val_pts = sorted({
+        get_pid(s)
+        for s, c in val_labels_dict.items()
+        if c == "BE"
+    })
+
+Do this only for reporting.
+
+Do NOT alter the actual split assignment.
+
+============================================================
+STEP 18 — PATIENT-LEVEL INTEGRITY CHECKS
+============================================================
+
+Before each experiment verify:
+
+- no patient appears in both train and validation
+- no patient appears in both validation and training
+- validation patients are exactly those specified by the fold
+- the same fold definitions are used for all experiments
+
+Print something like:
+
+    Fold 0:
+        Train patients: XX
+        Validation patients: XX
+        Overlap: 0
+
+Abort the experiment if patient overlap is detected.
+
+============================================================
+STEP 19 — RANDOM SEED / REPRODUCIBILITY
+============================================================
+
+Use the same random seed strategy across all experiments.
+
+Do not change seeds between experiments unless the existing code already intentionally uses fold-specific seeds.
+
+Record:
+
+    random seed
+    PyTorch seed
+    NumPy seed
+    fold number
+    experiment configuration
+
+inside:
+
+    experiment_config.json
+
+============================================================
+STEP 20 — DO NOT DO THESE THINGS
+============================================================
+
+DO NOT:
+
+- implement hierarchical classification
+- modify the four-class label definitions
+- merge BE and BM for the main classifier
+- merge ME and MM for the main classifier
+- tune classification thresholds
+- touch the final test set
+- perform test-set model selection
+- change architecture
+- change attention dimensions
+- change dropout
+- change learning rates
+- change number of epochs
+- introduce multiple hyperparameter changes simultaneously
+- claim patient-balanced sampling without inspecting the sampler implementation
+- calculate class weights using validation/test data
+- optimize solely for BM because BM has more samples
+- hide poor BE performance by reporting only binary performance
+
+============================================================
+FINAL OUTPUT REQUIRED
+============================================================
+
+When implementation is complete, provide:
+
+1. Exact files modified
+2. Exact files added
+3. Exact command(s) to run the experiments
+4. Confirmation that the same patient-level folds are reused
+5. Confirmation of what use_sampler=True actually does
+6. Description of the new patient-balanced sampler
+7. Experiment 1 results
+8. Experiment 2 results
+9. Experiment 3 results
+10. Experiment 4 results
+11. Experiment 5 results if successfully completed
+12. Comparison table
+13. BE-specific analysis
+14. Probability analysis
+15. Location of all saved JSON/CSV/checkpoint files
+16. Any implementation issues encountered
+
+Most importantly, DO NOT fabricate experiment results.
+
+If the code implementation is complete but experiments have not yet been executed, clearly state:
+
+    "Implementation complete — experiments not yet run."
+
+If an experiment fails, report the actual error and fix the implementation before moving to the next experiment where possible.
+
+============================================================
+DECISION CRITERIA FOR NEXT STAGE
+============================================================
+
+After all controlled experiments, do NOT automatically move to hierarchical classification.
+
+Instead, summarize what the experiments demonstrate.
+
+Specifically answer:
+
+1. Does plain CE outperform the current Focal Loss?
+2. Does patient-balanced sampling improve BE F1?
+3. Does weighted CE improve BE without damaging other classes?
+4. Does Focal + patient-balanced sampling improve BE?
+5. Does spectral augmentation provide additional improvement?
+6. Which configuration provides the strongest BE F1 while maintaining reasonable Macro F1 and MM F1?
+7. Is BE still the dominant weakness?
+8. Do BE probabilities indicate that threshold/calibration analysis is justified?
+9. Is hierarchical classification now justified by the evidence, or should another controlled experiment be performed first?
+
+Do not make a subjective ranking.
+
+Base the next recommendation strictly on the measured changes in:
+
+    Macro F1
+    BE F1
+    BE Recall
+    MM F1
+    Binary Macro F1
+    BM F1
+    ME F1
+    Accuracy
+
+The overall goal is to identify the actual cause of the BE weakness rather than blindly adding increasingly complex techniques.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-17T00:58:14+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\sasik\OneDrive\Documents\SkinCancer_DATASET\model\scratch\stage3_cv_runner.py (LANGUAGE_PYTHON)
+Cursor is on line: 186
+Other open documents:
+- c:\Users\sasik\OneDrive\Documents\SkinCancer_DATASET\model\scratch\stage3_cv_runner.py (LANGUAGE_PYTHON)
+- c:\Users\sasik\OneDrive\Documents\SkinCancer_DATASET\model\scratch\stage4_stage5_prob_embedding.py (LANGUAGE_PYTHON)
+- c:\Users\sasik\OneDrive\Documents\SkinCancer_DATASET\model\scratch\stage1_stage2_baseline_audit.py (LANGUAGE_PYTHON)
+</ADDITIONAL_METADATA>

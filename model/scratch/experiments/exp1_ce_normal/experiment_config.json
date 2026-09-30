@@ -1,0 +1,17 @@
+{
+  "name": "exp1_ce_normal",
+  "loss_name": "ce",
+  "sampling_mode": "normal",
+  "augmentation": false,
+  "focal_gamma": 1.5,
+  "seed": 42,
+  "device": "cuda",
+  "data_dir": "../preprocessing/outputs",
+  "pretrained_path": "outputs/pretrained_encoder_best.pth",
+  "n_folds": 5,
+  "phase1_epochs": 5,
+  "phase2_epochs": 15,
+  "batch_size": 64,
+  "kfold_sha256": "92cec1b9ab1c29af7ab20490aed94f5e853e5eb9f5b14ff24cbfb3424c825cf9",
+  "test_set_used": false
+}

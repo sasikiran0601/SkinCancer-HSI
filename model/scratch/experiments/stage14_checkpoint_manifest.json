@@ -1,0 +1,187 @@
+{
+  "exp1_ce_normal": [
+    {
+      "fold": 0,
+      "checkpoint": "scratch\\experiments\\exp1_ce_normal\\fold_0\\best_model.pth",
+      "exists": true,
+      "best_epoch": 3,
+      "best_validation_macro_f1": 0.47946844219704327
+    },
+    {
+      "fold": 1,
+      "checkpoint": "scratch\\experiments\\exp1_ce_normal\\fold_1\\best_model.pth",
+      "exists": true,
+      "best_epoch": 2,
+      "best_validation_macro_f1": 0.5454093476826252
+    },
+    {
+      "fold": 2,
+      "checkpoint": "scratch\\experiments\\exp1_ce_normal\\fold_2\\best_model.pth",
+      "exists": true,
+      "best_epoch": 11,
+      "best_validation_macro_f1": 0.4702564517715612
+    },
+    {
+      "fold": 3,
+      "checkpoint": "scratch\\experiments\\exp1_ce_normal\\fold_3\\best_model.pth",
+      "exists": true,
+      "best_epoch": 10,
+      "best_validation_macro_f1": 0.4220892178265724
+    },
+    {
+      "fold": 4,
+      "checkpoint": "scratch\\experiments\\exp1_ce_normal\\fold_4\\best_model.pth",
+      "exists": true,
+      "best_epoch": 13,
+      "best_validation_macro_f1": 0.606312808269176
+    }
+  ],
+  "exp2_ce_patient_balanced": [
+    {
+      "fold": 0,
+      "checkpoint": "scratch\\experiments\\exp2_ce_patient_balanced\\fold_0\\best_model.pth",
+      "exists": true,
+      "best_epoch": 3,
+      "best_validation_macro_f1": 0.49571443133798876
+    },
+    {
+      "fold": 1,
+      "checkpoint": "scratch\\experiments\\exp2_ce_patient_balanced\\fold_1\\best_model.pth",
+      "exists": true,
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.5963300520068462
+    },
+    {
+      "fold": 2,
+      "checkpoint": "scratch\\experiments\\exp2_ce_patient_balanced\\fold_2\\best_model.pth",
+      "exists": true,
+      "best_epoch": 10,
+      "best_validation_macro_f1": 0.49015437592231614
+    },
+    {
+      "fold": 3,
+      "checkpoint": "scratch\\experiments\\exp2_ce_patient_balanced\\fold_3\\best_model.pth",
+      "exists": true,
+      "best_epoch": 10,
+      "best_validation_macro_f1": 0.4297163675097935
+    },
+    {
+      "fold": 4,
+      "checkpoint": "scratch\\experiments\\exp2_ce_patient_balanced\\fold_4\\best_model.pth",
+      "exists": true,
+      "best_epoch": 11,
+      "best_validation_macro_f1": 0.5582213384754977
+    }
+  ],
+  "exp3_weighted_ce_patient_balanced": [
+    {
+      "fold": 0,
+      "checkpoint": "scratch\\experiments\\exp3_weighted_ce_patient_balanced\\fold_0\\best_model.pth",
+      "exists": true,
+      "best_epoch": 16,
+      "best_validation_macro_f1": 0.44250706063553696
+    },
+    {
+      "fold": 1,
+      "checkpoint": "scratch\\experiments\\exp3_weighted_ce_patient_balanced\\fold_1\\best_model.pth",
+      "exists": true,
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.6337263083575566
+    },
+    {
+      "fold": 2,
+      "checkpoint": "scratch\\experiments\\exp3_weighted_ce_patient_balanced\\fold_2\\best_model.pth",
+      "exists": true,
+      "best_epoch": 8,
+      "best_validation_macro_f1": 0.4845823186551826
+    },
+    {
+      "fold": 3,
+      "checkpoint": "scratch\\experiments\\exp3_weighted_ce_patient_balanced\\fold_3\\best_model.pth",
+      "exists": true,
+      "best_epoch": 14,
+      "best_validation_macro_f1": 0.35990300767574646
+    },
+    {
+      "fold": 4,
+      "checkpoint": "scratch\\experiments\\exp3_weighted_ce_patient_balanced\\fold_4\\best_model.pth",
+      "exists": true,
+      "best_epoch": 8,
+      "best_validation_macro_f1": 0.5388580127026585
+    }
+  ],
+  "exp4_focal_patient_balanced": [
+    {
+      "fold": 0,
+      "checkpoint": "scratch\\experiments\\exp4_focal_patient_balanced\\fold_0\\best_model.pth",
+      "exists": true,
+      "best_epoch": 3,
+      "best_validation_macro_f1": 0.4910152429686466
+    },
+    {
+      "fold": 1,
+      "checkpoint": "scratch\\experiments\\exp4_focal_patient_balanced\\fold_1\\best_model.pth",
+      "exists": true,
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.5836277278070486
+    },
+    {
+      "fold": 2,
+      "checkpoint": "scratch\\experiments\\exp4_focal_patient_balanced\\fold_2\\best_model.pth",
+      "exists": true,
+      "best_epoch": 10,
+      "best_validation_macro_f1": 0.49073216704583306
+    },
+    {
+      "fold": 3,
+      "checkpoint": "scratch\\experiments\\exp4_focal_patient_balanced\\fold_3\\best_model.pth",
+      "exists": true,
+      "best_epoch": 10,
+      "best_validation_macro_f1": 0.42504991729758335
+    },
+    {
+      "fold": 4,
+      "checkpoint": "scratch\\experiments\\exp4_focal_patient_balanced\\fold_4\\best_model.pth",
+      "exists": true,
+      "best_epoch": 11,
+      "best_validation_macro_f1": 0.552531177485487
+    }
+  ],
+  "exp5_best_plus_spectral_aug": [
+    {
+      "fold": 0,
+      "checkpoint": "scratch\\experiments\\exp5_best_plus_spectral_aug\\fold_0\\best_model.pth",
+      "exists": true,
+      "best_epoch": 2,
+      "best_validation_macro_f1": 0.4863405859630783
+    },
+    {
+      "fold": 1,
+      "checkpoint": "scratch\\experiments\\exp5_best_plus_spectral_aug\\fold_1\\best_model.pth",
+      "exists": true,
+      "best_epoch": 2,
+      "best_validation_macro_f1": 0.5561431822111574
+    },
+    {
+      "fold": 2,
+      "checkpoint": "scratch\\experiments\\exp5_best_plus_spectral_aug\\fold_2\\best_model.pth",
+      "exists": true,
+      "best_epoch": 15,
+      "best_validation_macro_f1": 0.4582870472627607
+    },
+    {
+      "fold": 3,
+      "checkpoint": "scratch\\experiments\\exp5_best_plus_spectral_aug\\fold_3\\best_model.pth",
+      "exists": true,
+      "best_epoch": 9,
+      "best_validation_macro_f1": 0.43380575082481865
+    },
+    {
+      "fold": 4,
+      "checkpoint": "scratch\\experiments\\exp5_best_plus_spectral_aug\\fold_4\\best_model.pth",
+      "exists": true,
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.5930270962279666
+    }
+  ]
+}
