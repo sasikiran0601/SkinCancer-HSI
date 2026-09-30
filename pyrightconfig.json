@@ -1,0 +1,14 @@
+{
+    "venvPath": ".",
+    "venv": ".runtime",
+    "executionEnvironments": [
+        {
+            "root": ".",
+            "extraPaths": [
+                "model",
+                "model/src",
+                "preprocessing"
+            ]
+        }
+    ]
+}

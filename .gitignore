@@ -1,0 +1,50 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.runtime/
+.venv/
+venv/
+env/
+ENV/
+
+# Raw Datasets and Large Arrays (Multi-GB)
+raw_zip/
+extracted_dataset/
+extracted_dataset_images_version/
+preprocessing/outputs/processed/
+*.zip
+*.tar.gz
+*.7z
+
+# Heavy PyTorch Checkpoints (>100MB)
+*.pth
+*.pt
+*.ckpt
+model/outputs/*.pth
+model/scratch/experiments/**/best_model.pth
+
+# Explicitly keep lightweight deployment ONNX models
+!deployment/streamlit/champion_model.onnx
+!model/outputs/champion_model.onnx
+
+# IDE, Editor, and Workspace Scratch Files
+.vscode/
+.idea/
+.claude/
+.obsidian/
+Excalidraw/
+Major/
+*.swp
+*.swo
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Experiment Tracking & Logs
+mlruns/
+*.log
