@@ -1,0 +1,9 @@
+# Lightweight requirements for Raspberry Pi 4 (ARM64 / Cortex-A72)
+# No PyTorch needed!
+
+numpy>=1.24.0
+onnxruntime>=1.16.0
+
+# Optional: GPIO library for physical status LED indicators
+# Pre-installed on Raspberry Pi OS; can also be installed with:
+# RPi.GPIO>=0.7.1

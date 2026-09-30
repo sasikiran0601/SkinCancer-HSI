@@ -1,0 +1,41 @@
+# Self-supervised pre-training configuration
+# Learns encoder representations from unlabeled spectra using contrastive learning
+
+model: self_attention
+num_bands: 116
+num_classes: 4
+dropout: 0.4
+attn_dim: 128
+
+# Pre-training hyperparameters
+epochs: 100
+batch_size: 128  # Larger for contrastive learning (more negatives = stronger signal)
+lr: 0.001
+weight_decay: 5e-5
+
+# Contrastive learning parameters
+temperature: 0.07  # NT-Xent temperature (controls similarity scaling)
+projection_dim: 128  # Dimension of contrastive projection space
+
+# Augmentation for creating positive pairs
+augmentation:
+  noise_prob: 0.6  # Probability of adding Gaussian noise
+  noise_std: 0.05  # Standard deviation of noise
+  dropout_prob: 0.5  # Probability of band dropout
+  shift_prob: 0.4  # Probability of spectral shift
+  scale_prob: 0.5  # Probability of spectrum scaling
+  shift_max: 3  # Maximum shift in bands
+  scale_range: [0.85, 1.15]  # Scale factor range
+
+# Data
+data_dir: ../preprocessing/outputs
+normalization: per_pixel
+device: cuda  # GPU is required for pre-training
+
+# Checkpointing
+save_dir: outputs
+save_interval: 10  # Save checkpoint every N epochs
+
+# Logging
+log_mlflow: false
+verbose: true

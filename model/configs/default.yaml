@@ -1,0 +1,37 @@
+# ============================================================
+# Default training configuration (Accuracy Improvement v2.0)
+# ============================================================
+# Path to the preprocessing outputs directory (relative to model/)
+data_dir: "../preprocessing/outputs"
+
+# Model architecture: baseline | depthwise_separable | self_attention
+model: self_attention
+
+# Dataset
+num_bands: 116
+num_classes: 4          # BE=0, BM=1, ME=2, MM=3
+label_mode: multi       # "multi" (4-class) or "binary" (M vs B)
+normalization: per_pixel # "per_pixel" or "per_band"
+
+# Training (OneCycleLR scheduler, gradient accumulation)
+epochs: 100             # More room for learning schedule
+batch_size: 32          # Gradient accumulation: 32 * 4 = 128 effective
+lr: 0.001               # OneCycleLR handles schedule (peak = lr * 10)
+weight_decay: 0.00005   # Slight increase for regularization
+patience: 25            # More patience for F1 monitoring
+dropout: 0.4            # Reduced for deeper network architecture
+
+# Augmentation (stronger: more prob, new augmentations)
+augment: true
+mixup_prob: 0.15        # Increased from 0.058
+
+# Advanced Training Options
+label_smoothing: 0.0    # Keep at 0 — smoothing breaks FocalLoss focal weight math (p_t = exp(-CE_smooth) != p_class)
+accumulation_steps: 4   # Gradient accumulation (effective batch = 128)
+attn_dim: 128           # Attention dimension (was 64, now 128)
+
+# GPU is required for all training commands.
+device: cuda
+
+# Logging (requires `pip install mlflow`)
+log_mlflow: false

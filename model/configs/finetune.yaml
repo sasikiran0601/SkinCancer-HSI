@@ -1,0 +1,53 @@
+# Fine-tuning configuration
+# Transfer learning from pre-trained encoder to labeled data
+
+model: self_attention
+num_bands: 116
+num_classes: 4
+dropout: 0.4
+attn_dim: 128
+
+# Fine-tuning hyperparameters
+phase1_epochs: 15  # Head warmup: classification head adapts to pre-trained features
+phase2_epochs: 65  # Full fine-tuning: encoder + head jointly trained
+total_epochs: 80
+
+batch_size: 32
+base_lr: 0.0005    # Lowered from 0.001 — gentler head adaptation
+encoder_lr: 0.00005  # Lowered from 0.0001 — preserve pre-trained features longer
+weight_decay: 1e-4   # Increased slightly for better generalization
+
+# Early stopping
+patience: 25  # Epochs to wait without improvement
+min_delta: 0.001  # Minimum improvement threshold
+
+# Augmentation (gentler than pre-training — preserve pre-trained representations)
+augment: true
+augmentation:
+  noise_prob: 0.5   # Reduced from 0.7
+  noise_std: 0.03   # Reduced from 0.05 — gentler noise
+  dropout_prob: 0.5  # Reduced from 0.7
+  shift_prob: 0.2   # Reduced from 0.3
+  scale_prob: 0.3   # Reduced from 0.4
+  mixup_prob: 0.10  # Reduced from 0.15 — less mixing = cleaner gradients
+
+# Gradient accumulation
+accumulation_steps: 4  # Effective batch size = 32 * 4 = 128
+
+# Loss function
+label_smoothing: 0.0  # FocalLoss uses label_smoothing=0.0
+
+# Data
+data_dir: ../preprocessing/outputs
+normalization: per_pixel
+device: cuda
+
+# Pre-training checkpoint
+pretrained_encoder: outputs/pretrained_encoder.pth
+
+# Logging
+log_mlflow: false
+verbose: true
+
+# Layer-wise learning rate strategy
+freeze_early_layers: false  # If true, freeze block1 and block2 in phase 2
