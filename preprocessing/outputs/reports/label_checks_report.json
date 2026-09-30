@@ -1,0 +1,40 @@
+{
+  "total_samples": 76,
+  "consistency": {
+    "valid_count": 76,
+    "invalid_count": 0,
+    "inconsistent_samples": []
+  },
+  "class_distribution": {
+    "BE": {
+      "actual": 0.07894736842105263,
+      "paper": 0.07,
+      "diff": 0.00894736842105262,
+      "within_tolerance": true
+    },
+    "BM": {
+      "actual": 0.4473684210526316,
+      "paper": 0.45,
+      "diff": 0.0026315789473684292,
+      "within_tolerance": true
+    },
+    "ME": {
+      "actual": 0.3157894736842105,
+      "paper": 0.32,
+      "diff": 0.004210526315789498,
+      "within_tolerance": true
+    },
+    "MM": {
+      "actual": 0.15789473684210525,
+      "paper": 0.16,
+      "diff": 0.002105263157894749,
+      "within_tolerance": true
+    }
+  },
+  "class_weights": {
+    "ME": 0.7916666666666666,
+    "MM": 1.5833333333333333,
+    "BM": 0.5588235294117647,
+    "BE": 3.1666666666666665
+  }
+}

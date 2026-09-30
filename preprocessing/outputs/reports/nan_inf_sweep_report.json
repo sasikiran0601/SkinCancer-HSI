@@ -1,0 +1,253 @@
+{
+  "total_checked": 76,
+  "samples_with_intervention": 49,
+  "fraction_with_intervention": 0.6447368421052632,
+  "total_values_fixed": 91875,
+  "intervention_log": {
+    "P100_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P101_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P102_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P103_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P104_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P106_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P107_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P109_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P110_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P112_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P113_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P116_C1004": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P56_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P60_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P60_C2000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P60_C3004": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P61_C1004": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P62_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P63_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P66_C1001": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P67_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P68_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P69_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P71_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P74_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P75_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P77_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P78_C3000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P79_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P80_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P81_C1005": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P82_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P83_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P86_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P86_C2001": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P86_C3000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P86_C4000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P87_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P88_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P89_C1001": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P90_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P91_C1003": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P92_C1004": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P94_C1005": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P95_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P96_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P97_C1004": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P98_C1002": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    },
+    "P99_C1000": {
+      "n_nonfinite_found": 1875,
+      "n_fixed": 1875,
+      "affected_bands": []
+    }
+  }
+}

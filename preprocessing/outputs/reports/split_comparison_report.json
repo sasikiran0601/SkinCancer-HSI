@@ -1,0 +1,36 @@
+{
+  "total_images": 76,
+  "unique_patients": 61,
+  "unparseable_ids": 0,
+  "patient_splits": {
+    "counts": {
+      "train": 51,
+      "val": 12,
+      "test": 13
+    },
+    "patient_overlap": {
+      "train_val_overlap": 0,
+      "train_test_overlap": 0,
+      "val_test_overlap": 0,
+      "any_overlap": 0
+    }
+  },
+  "image_splits": {
+    "counts": {
+      "train": 53,
+      "val": 11,
+      "test": 12
+    },
+    "patient_overlap": {
+      "train_val_overlap": 2,
+      "train_test_overlap": 2,
+      "val_test_overlap": 0,
+      "any_overlap": 4
+    }
+  },
+  "leakage_reduced_by": {
+    "train_val": 2,
+    "train_test": 2,
+    "val_test": 0
+  }
+}

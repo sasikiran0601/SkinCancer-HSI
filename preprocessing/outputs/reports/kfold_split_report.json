@@ -1,0 +1,97 @@
+{
+  "fold_0": {
+    "train_images": 60,
+    "train_patients": 48,
+    "train_distribution": {
+      "ME": 19,
+      "MM": 9,
+      "BM": 27,
+      "BE": 5
+    },
+    "val_images": 16,
+    "val_patients": 13,
+    "val_distribution": {
+      "ME": 5,
+      "BM": 7,
+      "MM": 3,
+      "BE": 1
+    },
+    "patient_overlap": 0
+  },
+  "fold_1": {
+    "train_images": 61,
+    "train_patients": 50,
+    "train_distribution": {
+      "ME": 19,
+      "MM": 10,
+      "BM": 28,
+      "BE": 4
+    },
+    "val_images": 15,
+    "val_patients": 11,
+    "val_distribution": {
+      "ME": 5,
+      "BM": 6,
+      "BE": 2,
+      "MM": 2
+    },
+    "patient_overlap": 0
+  },
+  "fold_2": {
+    "train_images": 61,
+    "train_patients": 48,
+    "train_distribution": {
+      "ME": 19,
+      "MM": 10,
+      "BM": 27,
+      "BE": 5
+    },
+    "val_images": 15,
+    "val_patients": 13,
+    "val_distribution": {
+      "ME": 5,
+      "BM": 7,
+      "MM": 2,
+      "BE": 1
+    },
+    "patient_overlap": 0
+  },
+  "fold_3": {
+    "train_images": 61,
+    "train_patients": 49,
+    "train_distribution": {
+      "ME": 19,
+      "MM": 10,
+      "BM": 27,
+      "BE": 5
+    },
+    "val_images": 15,
+    "val_patients": 12,
+    "val_distribution": {
+      "BM": 7,
+      "BE": 1,
+      "ME": 5,
+      "MM": 2
+    },
+    "patient_overlap": 0
+  },
+  "fold_4": {
+    "train_images": 61,
+    "train_patients": 49,
+    "train_distribution": {
+      "ME": 20,
+      "BM": 27,
+      "MM": 9,
+      "BE": 5
+    },
+    "val_images": 15,
+    "val_patients": 12,
+    "val_distribution": {
+      "MM": 3,
+      "ME": 4,
+      "BM": 7,
+      "BE": 1
+    },
+    "patient_overlap": 0
+  }
+}

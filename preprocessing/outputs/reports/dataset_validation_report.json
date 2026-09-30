@@ -1,0 +1,4478 @@
+{
+  "total_samples": 76,
+  "schema_passed": 76,
+  "schema_failed": 0,
+  "schema_failures": [],
+  "calibration_checked": 76,
+  "calibration_passed": 20,
+  "calibration_warnings": [
+    "P100_C1000",
+    "P101_C1000",
+    "P102_C1000",
+    "P103_C1003",
+    "P104_C1000",
+    "P106_C1000",
+    "P107_C1003",
+    "P109_C1000",
+    "P110_C1000",
+    "P112_C1000",
+    "P113_C1002",
+    "P116_C1004",
+    "P18_C1000",
+    "P21_C1000",
+    "P23_C1001",
+    "P24_C1000",
+    "P25_C2000",
+    "P25_C3000",
+    "P26_C1000",
+    "P56_C1002",
+    "P60_C1003",
+    "P60_C2000",
+    "P60_C3004",
+    "P61_C1004",
+    "P62_C1003",
+    "P63_C1000",
+    "P66_C1001",
+    "P67_C1003",
+    "P68_C1002",
+    "P69_C1003",
+    "P71_C1002",
+    "P74_C1002",
+    "P75_C1000",
+    "P77_C1000",
+    "P78_C3000",
+    "P79_C1000",
+    "P80_C1003",
+    "P81_C1005",
+    "P82_C1000",
+    "P83_C1003",
+    "P86_C1003",
+    "P86_C2001",
+    "P86_C3000",
+    "P86_C4000",
+    "P87_C1000",
+    "P88_C1000",
+    "P89_C1001",
+    "P90_C1002",
+    "P91_C1003",
+    "P92_C1004",
+    "P94_C1005",
+    "P95_C1000",
+    "P96_C1002",
+    "P97_C1004",
+    "P98_C1002",
+    "P99_C1000"
+  ],
+  "per_sample_schema": [
+    {
+      "sample_id": "P100_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P101_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P102_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P103_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P104_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P106_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P107_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P109_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P110_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P112_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P113_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P116_C1004",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P13_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P13_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P13_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P14_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P15_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P15_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P16_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P17_C1001",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P17_C2002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P18_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P20_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P21_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P23_C1001",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P24_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P25_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P25_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P26_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C4000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P28_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P30_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P32_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P56_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P60_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P60_C2000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P60_C3004",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P61_C1004",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P62_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P63_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P66_C1001",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P67_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P68_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P69_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P71_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P74_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P75_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P77_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P78_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P79_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P80_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P81_C1005",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P82_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P83_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BE)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P86_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P86_C2001",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P86_C3000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P86_C4000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (B)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (BM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P87_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P88_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P89_C1001",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P90_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P91_C1003",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P92_C1004",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P94_C1005",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P95_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P96_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P97_C1004",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P98_C1002",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (MM)"
+        }
+      ],
+      "reason": ""
+    },
+    {
+      "sample_id": "P99_C1000",
+      "valid": true,
+      "checks": [
+        {
+          "check": "calibratedHsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "calibratedHsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "hsCube_shape",
+          "passed": true,
+          "detail": "shape OK (125, 50, 50)"
+        },
+        {
+          "check": "hsCube_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "spectralRGB_shape",
+          "passed": true,
+          "detail": "shape OK (3, 50, 50)"
+        },
+        {
+          "check": "spectralRGB_dtype",
+          "passed": true,
+          "detail": "dtype OK float64"
+        },
+        {
+          "check": "binaryLabel_valid",
+          "passed": true,
+          "detail": "OK (M)"
+        },
+        {
+          "check": "multiLabel_valid",
+          "passed": true,
+          "detail": "OK (ME)"
+        }
+      ],
+      "reason": ""
+    }
+  ],
+  "per_sample_calibration": [
+    {
+      "sample_id": "P100_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P101_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 56532,
+      "frac_out_of_range": 0.1809024,
+      "min_val": 0.21739130434782608,
+      "max_val": 3.7746031746031745,
+      "reason": "1875 NaN values; 56532/312500 values (18.09%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P102_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P103_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": -0.1111111111111111,
+      "max_val": 1.8793363499245852,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P104_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 44572,
+      "frac_out_of_range": 0.1426304,
+      "min_val": 0.0,
+      "max_val": 2.674858223062382,
+      "reason": "1875 NaN values; 44572/312500 values (14.26%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P106_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 58631,
+      "frac_out_of_range": 0.1876192,
+      "min_val": 0.13432835820895522,
+      "max_val": 4.4646739130434785,
+      "reason": "1875 NaN values; 58631/312500 values (18.76%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P107_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P109_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 15578,
+      "frac_out_of_range": 0.0498496,
+      "min_val": 0.2857142857142857,
+      "max_val": 4.011904761904762,
+      "reason": "1875 NaN values; 15578/312500 values (4.98%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P110_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P112_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1109,
+      "frac_out_of_range": 0.0035488,
+      "min_val": 0.0,
+      "max_val": 2.3774733637747336,
+      "reason": "1875 NaN values; 1109/312500 values (0.35%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P113_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 11046,
+      "frac_out_of_range": 0.0353472,
+      "min_val": 0.045454545454545456,
+      "max_val": 3.1074380165289255,
+      "reason": "1875 NaN values; 11046/312500 values (3.53%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P116_C1004",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 433,
+      "frac_out_of_range": 0.0013856,
+      "min_val": -0.5,
+      "max_val": 3.0,
+      "reason": "1875 NaN values; 433/312500 values (0.14%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P13_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0749063670411985,
+      "max_val": 1.325068870523416,
+      "reason": ""
+    },
+    {
+      "sample_id": "P13_C2000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.07692307692307693,
+      "max_val": 1.125,
+      "reason": ""
+    },
+    {
+      "sample_id": "P13_C3000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0967741935483871,
+      "max_val": 1.1081081081081081,
+      "reason": ""
+    },
+    {
+      "sample_id": "P14_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.09411764705882353,
+      "max_val": 1.236842105263158,
+      "reason": ""
+    },
+    {
+      "sample_id": "P15_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 0.7337278106508875,
+      "reason": ""
+    },
+    {
+      "sample_id": "P15_C2000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.014084507042253521,
+      "max_val": 0.8741007194244604,
+      "reason": ""
+    },
+    {
+      "sample_id": "P16_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": -0.08,
+      "max_val": 0.5422535211267606,
+      "reason": ""
+    },
+    {
+      "sample_id": "P17_C1001",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 0.796875,
+      "reason": ""
+    },
+    {
+      "sample_id": "P17_C2002",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.14893617021276595,
+      "max_val": 1.7890173410404624,
+      "reason": ""
+    },
+    {
+      "sample_id": "P18_C1000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 3,
+      "frac_out_of_range": 9.6e-06,
+      "min_val": 0.13924050632911392,
+      "max_val": 2.0359550561797755,
+      "reason": "3/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P20_C2000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 0.7522935779816514,
+      "reason": ""
+    },
+    {
+      "sample_id": "P21_C1000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 9301,
+      "frac_out_of_range": 0.0297632,
+      "min_val": 0.09417040358744394,
+      "max_val": 2.8453237410071943,
+      "reason": "9301/312500 values (2.98%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P23_C1001",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 615,
+      "frac_out_of_range": 0.001968,
+      "min_val": -0.6666666666666666,
+      "max_val": 2.538258575197889,
+      "reason": "615/312500 values (0.20%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P24_C1000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 5,
+      "frac_out_of_range": 1.6e-05,
+      "min_val": -0.3333333333333333,
+      "max_val": 2.0,
+      "reason": "5/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P25_C2000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 4,
+      "frac_out_of_range": 1.28e-05,
+      "min_val": -0.4,
+      "max_val": 1.75,
+      "reason": "4/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P25_C3000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 4,
+      "frac_out_of_range": 1.28e-05,
+      "min_val": -0.25,
+      "max_val": 2.0,
+      "reason": "4/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P26_C1000",
+      "valid": false,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 2,
+      "frac_out_of_range": 6.4e-06,
+      "min_val": -0.4,
+      "max_val": 2.0,
+      "reason": "2/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P27_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.08906882591093117,
+      "max_val": 1.3103709311127933,
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C2000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.09937888198757763,
+      "max_val": 1.046260601387818,
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C3000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.05263157894736842,
+      "max_val": 1.1005788712011577,
+      "reason": ""
+    },
+    {
+      "sample_id": "P27_C4000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0683453237410072,
+      "max_val": 1.3948675496688743,
+      "reason": ""
+    },
+    {
+      "sample_id": "P28_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.1652892561983471,
+      "max_val": 1.8129032258064517,
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.06451612903225806,
+      "max_val": 1.1428571428571428,
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C2000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.09285714285714286,
+      "max_val": 0.9391304347826087,
+      "reason": ""
+    },
+    {
+      "sample_id": "P29_C3000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.10256410256410256,
+      "max_val": 0.8045112781954887,
+      "reason": ""
+    },
+    {
+      "sample_id": "P30_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.06635071090047394,
+      "max_val": 0.8270676691729323,
+      "reason": ""
+    },
+    {
+      "sample_id": "P32_C1000",
+      "valid": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.16260162601626016,
+      "max_val": 1.8201368523949168,
+      "reason": ""
+    },
+    {
+      "sample_id": "P56_C1002",
+      "valid": false,
+      "n_nan": 250,
+      "n_inf": 1625,
+      "n_out_of_range": 17499,
+      "frac_out_of_range": 0.0559968,
+      "min_val": 0.0,
+      "max_val": 7.909090909090909,
+      "reason": "250 NaN values; 1625 Inf values; 17499/312500 values (5.60%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P60_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.11920529801324503,
+      "max_val": 2.25,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P60_C2000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.14173228346456693,
+      "max_val": 2.3333333333333335,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P60_C3004",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.16346153846153846,
+      "max_val": 1.75,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P61_C1004",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.1,
+      "max_val": 1.75,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P62_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": -0.25,
+      "max_val": 1.5,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P63_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 3,
+      "frac_out_of_range": 9.6e-06,
+      "min_val": 0.0,
+      "max_val": 2.3333333333333335,
+      "reason": "1875 NaN values; 3/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P66_C1001",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.0,
+      "max_val": 2.5,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P67_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": -0.3333333333333333,
+      "max_val": 1.75,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P68_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P69_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.125,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P71_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.125,
+      "max_val": 2.3333333333333335,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P74_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.05263157894736842,
+      "max_val": 1.75,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P75_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 36447,
+      "frac_out_of_range": 0.1166304,
+      "min_val": 0.22900763358778625,
+      "max_val": 3.6705539358600583,
+      "reason": "1875 NaN values; 36447/312500 values (11.66%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P77_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.16455696202531644,
+      "max_val": 1.9038461538461537,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P78_C3000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.9382504288164666,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P79_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.08695652173913043,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P80_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": -0.25,
+      "max_val": 1.3333333333333333,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P81_C1005",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": -0.07692307692307693,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P82_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.07142857142857142,
+      "max_val": 2.5,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P83_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.0,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P86_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.125,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P86_C2001",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.09090909090909091,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P86_C3000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 155,
+      "frac_out_of_range": 0.000496,
+      "min_val": 0.11940298507462686,
+      "max_val": 2.5,
+      "reason": "1875 NaN values; 155/312500 values (0.05%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P86_C4000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1,
+      "frac_out_of_range": 3.2e-06,
+      "min_val": 0.1,
+      "max_val": 2.3333333333333335,
+      "reason": "1875 NaN values; 1/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P87_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 9938,
+      "frac_out_of_range": 0.0318016,
+      "min_val": 0.0,
+      "max_val": 3.731764705882353,
+      "reason": "1875 NaN values; 9938/312500 values (3.18%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P88_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.07142857142857142,
+      "max_val": 1.6666666666666667,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P89_C1001",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 410,
+      "frac_out_of_range": 0.001312,
+      "min_val": 0.06854838709677419,
+      "max_val": 2.3333333333333335,
+      "reason": "1875 NaN values; 410/312500 values (0.13%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P90_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 1554,
+      "frac_out_of_range": 0.0049728,
+      "min_val": 0.10407239819004525,
+      "max_val": 2.5461254612546127,
+      "reason": "1875 NaN values; 1554/312500 values (0.50%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P91_C1003",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.15789473684210525,
+      "max_val": 1.8202416918429003,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P92_C1004",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 74523,
+      "frac_out_of_range": 0.2384736,
+      "min_val": 0.08653846153846154,
+      "max_val": 3.5096618357487923,
+      "reason": "1875 NaN values; 74523/312500 values (23.85%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P94_C1005",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": -0.1111111111111111,
+      "max_val": 1.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P95_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 10,
+      "frac_out_of_range": 3.2e-05,
+      "min_val": 0.0,
+      "max_val": 3.0,
+      "reason": "1875 NaN values; 10/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P96_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": 0.08139534883720931,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    },
+    {
+      "sample_id": "P97_C1004",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 2,
+      "frac_out_of_range": 6.4e-06,
+      "min_val": -0.25,
+      "max_val": 2.5,
+      "reason": "1875 NaN values; 2/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P98_C1002",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 4,
+      "frac_out_of_range": 1.28e-05,
+      "min_val": -0.3333333333333333,
+      "max_val": 2.0,
+      "reason": "1875 NaN values; 4/312500 values (0.00%) outside [-0.2, 2.0]"
+    },
+    {
+      "sample_id": "P99_C1000",
+      "valid": false,
+      "n_nan": 1875,
+      "n_inf": 0,
+      "n_out_of_range": 0,
+      "frac_out_of_range": 0.0,
+      "min_val": -0.14285714285714285,
+      "max_val": 2.0,
+      "reason": "1875 NaN values"
+    }
+  ]
+}

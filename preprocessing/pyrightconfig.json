@@ -1,0 +1,17 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.13",
+  "extraPaths": [
+    "."
+  ],
+  "include": [
+    "hsi_preprocessing",
+    "tests",
+    "scripts"
+  ],
+  "exclude": [
+    ".venv",
+    "outputs"
+  ]
+}

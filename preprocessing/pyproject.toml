@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsi_preprocessing"
+version = "1.0.0"
+description = "Hyperspectral skin cancer preprocessing pipeline (Leon et al. 2020)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "h5py>=3.9",
+    "matplotlib>=3.7",
+    "scikit-learn>=1.2",
+    "scikit-image>=0.21",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hsi_preprocessing*"]
