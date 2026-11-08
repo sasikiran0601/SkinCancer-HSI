@@ -1,0 +1,28 @@
+{
+  "sample": "P107_C1003_processed.npy",
+  "dominant_class": "BM",
+  "dominant_name": "Benign Melanocytic (BM)",
+  "is_malignant": false,
+  "benign_percent": 87.52,
+  "malignant_percent": 12.48,
+  "class_counts": {
+    "BE": 3,
+    "BM": 2185,
+    "ME": 153,
+    "MM": 159
+  },
+  "class_percentages": {
+    "BE": 0.12,
+    "BM": 87.4,
+    "ME": 6.12,
+    "MM": 6.36
+  },
+  "mean_probabilities": {
+    "BE": 0.0742,
+    "BM": 0.5357,
+    "ME": 0.1731,
+    "MM": 0.217
+  },
+  "latency_ms": 5571.4,
+  "throughput_px_per_sec": 448.7
+}

@@ -1,6 +1,7 @@
 # Raspberry Pi 4 Deployment Guide: Hyperspectral Skin Cancer Classification
 
-This directory contains everything needed to run real-time hyperspectral skin cancer inference on an edge device — specifically the **Raspberry Pi 4 Model B (ARM Cortex-A72)**.
+This directory contains the files needed to run hyperspectral model inference on
+a Raspberry Pi 4 Model B (ARM Cortex-A72).
 
 ---
 
@@ -16,10 +17,10 @@ This directory contains everything needed to run real-time hyperspectral skin ca
 [ Raspberry Pi 4 (Edge Hardware) ]
         │
         ├─► `rpi_inference.py` (ONNX Runtime ARM64 engine)
-        ├─► Input: `sample.npy` (116 spectral bands, 50x50 pixels)
+        ├─► Input: `sample_processed.npy` (116 spectral bands, 50x50 pixels)
         │
         ├──► Terminal: Colored 50x50 ASCII lesion map & statistics
-        ├──► Storage : `result.json` (Structured diagnostic summary)
+        ├──► Storage : `result.json` (Structured model-output summary)
         └──► Hardware: (Optional) 4x GPIO LEDs indicating class / risk
 ```
 
@@ -89,6 +90,31 @@ Run inference with the default parameters:
 python rpi_inference.py --model model.onnx --image sample.npy
 ```
 
+### Step 3.3a: Demo with a raw calibrated cube
+
+For a presentation demo, copy the original **calibrated** cube with 125 bands
+and `preprocess_raw.py` to the Pi. The helper performs the same repair, band
+trimming, smoothing, and per-pixel normalization used during training:
+
+```bash
+python preprocess_raw.py --input raw_calibrated.npy --output sample_processed.npy
+python rpi_inference.py --model model.onnx --image sample_processed.npy --output result.json
+```
+
+The raw input must have shape `(125, H, W)`. An uncalibrated `hsCube` cannot be
+processed correctly without its matching white and dark reference cubes.
+
+For the supplied MATLAB 7.3 dataset ZIP archives, install the HDF5 reader on
+the Pi and convert each MAT capture first:
+
+```bash
+pip install h5py
+python convert_mat_to_npy.py --input mat_files/P100_C1000.mat \
+  --output raw_inputs/P100_C1000.npy
+python preprocess_raw.py --input raw_inputs/P100_C1000.npy \
+  --output processed_inputs/P100_C1000.npy
+```
+
 #### Command-Line Arguments:
 | Flag | Default | Description |
 |---|---|---|
@@ -105,14 +131,14 @@ python rpi_inference.py --model model.onnx --image sample.npy
 ### Terminal Display
 When executed, `rpi_inference.py` prints:
 1. **Model & Hardware Initialization**: Number of CPU threads, load time.
-2. **50x50 Spatial ASCII Map**:
+2. **50x50 spatial ASCII map**:
    - `\033[94m#\033[0m` (Blue) : Benign Epidermal (BE)
    - `\033[92m#\033[0m` (Green): Benign Melanocytic (BM)
    - `\033[93m#\033[0m` (Yellow): Malignant Epidermal (ME)
    - `\033[91m#\033[0m` (Red)  : Malignant Melanoma (MM)
-3. **Clinical Risk & Diagnostic Summary**:
+3. **Model-output summary**:
    - Class breakdown with percentages
-   - Benign vs Malignant lesion burden
+   - Benign versus malignant model-class composition
    - Inference latency and throughput (pixels/second)
 
 ### JSON Output (`result.json`)
@@ -160,13 +186,18 @@ python rpi_inference.py --model model.onnx --image sample.npy --gpio
 
 ---
 
-## 6. Performance Benchmark on Raspberry Pi 4
+## 6. Performance notes
 
 | Metric | Measured on RPi 4 (4 Cores @ 1.5 GHz) |
 |---|---|
 | **Model Size** | 354 KB (`model.onnx`) |
 | **Memory Footprint (RAM)** | < 120 MB |
-| **Full Cube (2,500 pixels) Latency** | ~320 – 450 ms |
-| **Per-Pixel Latency** | ~130 μs / pixel |
-| **Throughput** | ~7,000 – 8,000 pixels / second |
-| **Power Consumption** | ~4.5 W peak during inference |
+| **Full Cube (2,500 pixels) Latency** | Measure on the target Pi |
+| **Per-Pixel Latency** | Depends on ONNX Runtime and thermal state |
+| **Throughput** | Depends on ONNX Runtime and batch size |
+| **Power Consumption** | Depends on the Pi power profile |
+
+The measured presentation run on the available Pi processed 2,500 pixels in
+approximately 5.6 seconds. Treat this as a local observation rather than a
+hardware guarantee. The output is a model prediction and is not a standalone
+medical diagnosis.

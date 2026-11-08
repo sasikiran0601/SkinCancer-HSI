@@ -112,5 +112,5 @@ Band count after pipeline: **116** (trim first 4, last 5 from original 125).
 ---
 
 ## Schema Validation Code
-See [`hsi_preprocessing/validation.py`](../hsi_preprocessing/validation.py) →
+See [`hsi_preprocessing/validation.py`](hsi_preprocessing/validation.py) →
 `validate_mat_structure(sample_dir, sample_id)`.

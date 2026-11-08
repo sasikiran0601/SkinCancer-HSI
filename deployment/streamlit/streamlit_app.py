@@ -2,8 +2,8 @@
 Hyperspectral Skin Cancer Diagnostic AI — Streamlit Cloud App
 =============================================================
 100% Free Cloud Deployment on Streamlit Community Cloud (Snowflake).
-Processes 116-band HSI cubes and produces interactive lesion heatmaps,
-clinical risk triage, and diagnostic breakdowns via ONNX Runtime.
+Processes 116-band HSI cubes and produces interactive tissue heatmaps
+and model-output breakdowns via ONNX Runtime.
 """
 import io
 import json
@@ -89,6 +89,7 @@ session, input_name = load_onnx_model()
 # ==============================================================================
 def process_hsi_cube(cube: np.ndarray, batch_size: int = 256):
     """Runs vectorized ONNX inference on an HSI cube (H, W, 116)."""
+    cube = np.asarray(cube)
     if cube.ndim != 3:
         raise ValueError(f"Expected 3D array (H, W, 116), received shape {cube.shape}")
 
@@ -97,8 +98,28 @@ def process_hsi_cube(cube: np.ndarray, batch_size: int = 256):
     elif cube.shape[2] != 116:
         raise ValueError(f"Expected 116 spectral bands, received {cube.shape[2]}")
 
+    if not np.issubdtype(cube.dtype, np.number):
+        raise ValueError(f"Expected numeric HSI data, received dtype {cube.dtype}")
+    if not np.isfinite(cube).all():
+        raise ValueError("HSI cube contains NaN or Inf values; repair calibration before inference.")
+    if cube.shape[0] == 0 or cube.shape[1] == 0:
+        raise ValueError(f"HSI cube has an empty spatial dimension: {cube.shape}")
+
     cube = cube.astype(np.float32)
     H, W, B = cube.shape
+
+    # The classifier is trained on per-pixel min-max normalized spectra.
+    # Apply the same transform here so deployment does not silently use a
+    # different input distribution for raw calibrated cubes.
+    band_min = cube.min(axis=2, keepdims=True)
+    band_range = cube.max(axis=2, keepdims=True) - band_min
+    cube = np.divide(
+        cube - band_min,
+        band_range,
+        out=np.zeros_like(cube),
+        where=band_range > 0,
+    )
+
     total_pixels = H * W
     pixels = cube.reshape(-1, B)
 
@@ -172,10 +193,11 @@ with st.sidebar:
 # ==============================================================================
 # MAIN PAGE
 # ==============================================================================
-st.title("🔬 Hyperspectral Skin Cancer Classification Cloud")
+st.title("🔬 Hyperspectral Skin Cancer Model Output Viewer")
 st.markdown(
     "Upload a calibrated **Hyperspectral Imaging (HSI) cube** (`.npy` array with 116 spectral bands) "
-    "to perform real-time pixel-wise tissue segmentation and clinical triage."
+    "to inspect real-time pixel-wise model outputs. Results are research predictions "
+    "and must not be used as a standalone medical diagnosis."
 )
 
 st.markdown("---")
@@ -206,12 +228,12 @@ if uploaded_file is not None:
         col1, col2, col3, col4 = st.columns(4)
         with col1:
             if malignant_pct > benign_pct:
-                st.metric("Clinical Risk Triage", "⚠️ MALIGNANT", delta=f"{malignant_pct:.1f}% risk", delta_color="inverse")
+                st.metric("Model Output Summary", "MALIGNANT-DOMINANT", delta=f"{malignant_pct:.1f}% of pixels", delta_color="inverse")
             else:
-                st.metric("Clinical Risk Triage", "✅ BENIGN", delta=f"{benign_pct:.1f}% safe", delta_color="normal")
+                st.metric("Model Output Summary", "BENIGN-DOMINANT", delta=f"{benign_pct:.1f}% of pixels", delta_color="normal")
 
         with col2:
-            st.metric("Dominant Diagnosis", dominant, f"{percents[dominant]:.1f}% of lesion")
+            st.metric("Dominant Model Class", dominant, f"{percents[dominant]:.1f}% of pixels")
 
         with col3:
             st.metric("Total Analyzed Pixels", f"{total_pixels:,}", f"Shape {cube.shape[0]}x{cube.shape[1]}")
@@ -247,7 +269,7 @@ if uploaded_file is not None:
             c_name = CLASS_NAMES[i]
             table_data.append({
                 "Class Code": c_name,
-                "Lesion Diagnosis": CLASS_LABELS[i],
+                "Model Class Description": CLASS_LABELS[i],
                 "Pixel Count": f"{counts[c_name]:,}",
                 "Lesion Area (%)": f"{percents[c_name]:.2f}%",
                 "Mean Softmax Probability": f"{np.mean(all_probs[:, i]):.4f}",
@@ -259,7 +281,8 @@ if uploaded_file is not None:
             "model_version": MODEL_VERSION,
             "filename": uploaded_file.name,
             "inference_time_ms": round(infer_time_ms, 2),
-            "dominant_diagnosis": dominant_label,
+            "dominant_model_class": dominant,
+            "dominant_model_class_description": dominant_label,
             "dominant_percentage": percents[dominant],
             "benign_percentage": round(benign_pct, 2),
             "malignant_percentage": round(malignant_pct, 2),
@@ -272,7 +295,7 @@ if uploaded_file is not None:
         }
 
         st.download_button(
-            label="📥 Download Structured Diagnostic Report (JSON)",
+            label="📥 Download Model Output Report (JSON)",
             data=json.dumps(report_dict, indent=2),
             file_name=f"diagnostic_report_{Path(uploaded_file.name).stem}.json",
             mime="application/json",
@@ -281,4 +304,4 @@ if uploaded_file is not None:
     except Exception as e:
         st.error(f"Error processing HSI file: {e}")
 else:
-    st.info("👆 Upload an HSI cube (`.npy`) above to begin diagnosis.")
+    st.info("👆 Upload an HSI cube (`.npy`) above to inspect model outputs. This prototype is not a medical diagnosis.")

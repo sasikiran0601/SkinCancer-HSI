@@ -3,6 +3,7 @@
 
 numpy>=1.24.0
 onnxruntime>=1.16.0
+h5py>=3.9.0
 
 # Optional: GPIO library for physical status LED indicators
 # Pre-installed on Raspberry Pi OS; can also be installed with:

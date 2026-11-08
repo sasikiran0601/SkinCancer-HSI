@@ -1,0 +1,28 @@
+{
+  "sample": "P109_C1000_processed.npy",
+  "dominant_class": "ME",
+  "dominant_name": "Malignant Epidermal (ME)",
+  "is_malignant": true,
+  "benign_percent": 2.12,
+  "malignant_percent": 97.88,
+  "class_counts": {
+    "BE": 1,
+    "BM": 52,
+    "ME": 2447,
+    "MM": 0
+  },
+  "class_percentages": {
+    "BE": 0.04,
+    "BM": 2.08,
+    "ME": 97.88,
+    "MM": 0.0
+  },
+  "mean_probabilities": {
+    "BE": 0.0228,
+    "BM": 0.0836,
+    "ME": 0.8768,
+    "MM": 0.0168
+  },
+  "latency_ms": 5604.73,
+  "throughput_px_per_sec": 446.1
+}
